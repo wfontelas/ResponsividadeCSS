@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    font-family: Arial;
+}
+
+header{
+    background-color: lightblue;
+    padding: 60px;
+    text-align: center;
+}
+
+h2{
+    font-size: 1rem; /*usar rem para designs responsivos*/
+    font-weight: normal;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+.details {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.card {
+    background-color: lightblue;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.image-card {
+    background-color: lightblue;
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+    flex-basis: 200px;
+}
+
+.image-card img {
+    width: 100%;
+}
+
+/*Media features*/
+
+
+@media screen and (max-width: 690px) {
+    .details{
+        flex-direction: column;
+    }
+
+    .image-card {
+        flex-basis: 100px;
+    }
+} 
+
+/*orientation*/
+
+@media screen and (orientation: landscape) { /*portrait*/
+    header {
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (pointer: coarse) {
+    header {
+        color: cornflowerblue;
+    }
+}
+
+/*Operadores*/
+
+/*and,  or ","*/
+@media screen and (min-width: 600px),
+screen and (orientation: landscape) {
+    body{
+        color: red;
+    }
+    
+}
+
+/*not*/
+/* @media not all and(orientation: landscape){
+    body {
+        color: pink;
+    }
+} */
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .image-container {
+            border: 2px solid red;
+        }
+
+        img{
+            max-width: 100%;
+        } */
+
+        .image-container {
+            border: 2px solid red;
+            height: 800px;
+            width: 100%;
+
+            background-image: url("assets/images/dio.png");
+        }
+
+        @media screen and (max-width: 690px) {
+            
+            .image-container {
+                background-image: url("assets/images/Space-Background-Images.jpg")"
+            }
+        }
+    </style>
+</head>
+<body>
+    <p><b>To understand this example, you should open this page on phone or a tablet</b></p>
+
+    <div class="image-container">
+        <img src="assets/images/Space-Background-Images.jpg" alt="">
+    </div>
+
+    <picture>
+        <source srcset="assets/images/Space-Background-Images.jpg" media="(max-width: 680px)">
+        <source srcset="assets/images/dio.png">
+        <img src="assets/images/dio.png" alt="Imagem de teste">
+    </picture>
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis expedita ex nam non voluptate, cumque dolorum suscipit voluptatibus voluptatum voluptatem. Sint tempora id mollitia nulla praesentium molestiae maiores, consequatur expedita.
+        Velit dolor laborum nulla nesciunt molestias. Consequatur, sint ullam obcaecati nihil nam at culpa porro voluptas numquam officia beatae distinctio quasi ipsa. Reprehenderit quisquam omnis fugiat, illum obcaecati corrupti mollitia!
+        Doloribus facilis libero officia quis blanditiis eos maiores voluptatem, pariatur ducimus obcaecati aspernatur laudantium. Voluptatum est autem quaerat! Beatae magni libero earum culpa, optio laudantium laborum a excepturi quia repellendus!
+        Sequi, voluptate ab exercitationem maiores quo ut eius blanditiis similique totam quod quos adipisci earum assumenda. Iste ducimus repellat, iure atque fugit facere omnis assumenda consequuntur molestias vitae molestiae quod!
+        Nam sapiente atque laboriosam. Qui ipsum quia repudiandae quaerat distinctio sint veritatis magni! Saepe enim repellendus, quis consequatur esse et possimus ipsam non eius adipisci. Exercitationem impedit minima magnam sunt.
+    </p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@300;400;700&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+
+}
+
+
+header {
+    background-image: url('/9-DiscordComCSS/assets/img/Header\ Background.png');
+     
+    
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Luckiest Guy', cursive;
+    color: white;          
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;    
+}
